@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин Техніки — Товар</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container header-content">
+        <a href="main.html" class="logo">Магазин Техніки</a>
+        <button class="menu-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false">
+    ☰ Меню
+    </button>
+
+<nav class="nav-menu">
+    <a href="main.html">Головна</a>
+    <a href="catalog.html"class="active">Каталог</a>
+    <a href="cart.html">Кошик</a>
+</nav>
+    </div>
+</header>
+<main class="container" data-product-id="1">
+
+    <h1>Бездротові навушники</h1>
+
+    <section class="product-details">
+
+        <div class="product-catalog large">
+            <img src="photo1.jpg" alt="Бездротові навушники">
+        </div>
+
+        <div>
+            <h2>Бездротові навушники</h2>
+            <p class="price">1999 грн</p>
+
+            <p>
+                Сучасні бездротові навушники
+                для комфортного прослуховування музики.
+            </p>
+
+            <button type="button" class="button add-to-cart" data-product-id="1">Додати до кошика</button><p class="cart-feedback" aria-live="polite"></p>
+        </div>
+
+    </section>
+
+</main>
+<script src="script.js" defer></script>
+
+</body>
+</html>

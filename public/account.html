@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Мій кабінет — TECH STORE</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Шапка сайту -->
+    <header>
+        <div class="container header-content">
+
+            <a href="main.html" class="logo">
+                Магазин Техніки
+            </a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Відкрити меню"
+                aria-expanded="false">
+                ☰ Меню
+            </button>
+
+            <!-- Головне меню -->
+            <nav class="nav-menu">
+
+                <a href="main.html">
+                    Головна
+                </a>
+
+                <a href="catalog.html">
+                    Каталог
+                </a>
+
+                <a href="cart.html">
+                    Кошик
+                </a>
+
+                <a href="account.html" class="active">
+                    Мій кабінет
+                </a>
+
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- Особистий кабінет -->
+    <main class="container account-page">
+
+        <div class="account-top">
+
+            <div>
+                <p class="eyebrow">
+                    ОСОБИСТИЙ ПРОСТІР
+                </p>
+
+                <h1>Мій кабінет</h1>
+
+                <p class="muted">
+                    Інформація профілю та історія покупок.
+                </p>
+            </div>
+
+            <button
+                id="logout-button"
+                class="button secondary"
+                type="button">
+                Вийти з акаунта
+            </button>
+
+        </div>
+
+
+        <!-- Інформація користувача -->
+        <section class="profile-card">
+
+            <div class="avatar">
+                TS
+            </div>
+
+            <div>
+
+                <h2 id="account-name">
+                    Завантаження...
+                </h2>
+
+                <p id="account-email" class="muted"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Історія замовлень -->
+        <section id="account-content">
+
+            <div class="section-heading">
+
+                <h2>Мої замовлення</h2>
+
+                <span class="muted">
+                    Історія покупок
+                </span>
+
+            </div>
+
+            <div id="orders-list">
+
+                <p>
+                    Завантаження замовлень...
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Підключення JavaScript -->
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>

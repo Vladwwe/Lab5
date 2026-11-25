@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин Техніки — Головна</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="container header-content">
+        <a href="main.html" class="logo">Магазин Техніки</a>
+        <button class="menu-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false">
+    ☰ Меню
+    </button>
+
+<nav class="nav-menu">
+    <a href="main.html"class="active">Головна</a>
+    <a href="catalog.html">Каталог</a>
+    <a href="cart.html">Кошик</a>
+</nav>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="hero">
+        <h1>Техніка для кожного</h1>
+        <p>Обирай сучасні пристрої для роботи та відпочинку.</p>
+        <a href="catalog.html" class="button">Перейти до каталогу</a>
+    </section>
+
+    <section>
+        <h2>Популярні товари</h2>
+
+        <div class="products">
+
+            <article class="product-card" data-product-id="1">
+                <div class="product-icon">
+                    <img src="photo1.jpg" alt="Бездротові навушники">
+                </div>
+                <h3>Бездротові навушники</h3>
+                <p class="price">1999 грн</p>
+                <a href="product.html" class="button">Детальніше</a>
+            </article>
+
+            <article class="product-card" data-product-id="2">
+                <div class="product-icon">
+                    <img src="photo2.jpg" alt="">
+                </div>
+                <h3>Комп'ютерна миша</h3>
+                <p class="price">499 грн</p>
+                <a href="product2.html" class="button">Детальніше</a>
+            </article>
+
+        </div>
+    </section>
+
+</main>
+
+<script src="script.js" defer></script>
+</body>
+</html>

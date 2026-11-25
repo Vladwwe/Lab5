@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин Техніки — Каталог</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container header-content">
+        <a href="main.html" class="logo">Магазин Техніки</a>
+        <button class="menu-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false">
+    ☰ Меню
+    </button>
+
+<nav class="nav-menu">
+    <a href="main.html">Головна</a>
+    <a href="catalog.html"  class="active"  >Каталог</a>
+    <a href="cart.html">Кошик</a>
+</nav>
+    </div>
+</header>
+
+<main class="container">
+
+    <h1>Каталог товарів</h1>
+    <p>Оберіть товар, який вас цікавить.</p>
+    <input
+    type="text"
+    id="product-search"
+    placeholder="Пошук товарів..."
+    >
+
+    <section class="products">
+
+        <article class="product-card" data-product-id="1">
+            <div class="product-icon">
+                <img src="photo1.jpg" alt="Бездротові навушники"></div>
+            <h2 class="product-name"> Бездротові навушники</h2>
+            <p class="price">1999 грн</p>
+            <a href="product.html" class="button">Детальніше</a>
+        </article> 
+
+        <article class="product-card" data-product-id="2">
+            <div class="product-icon">
+                <img src="photo2.jpg" alt="Комп’ютерна миша"></div>
+            <h2 class="product-name">Комп'ютерна миша</h2>
+            <p class="price">499 грн</p>
+            <a href="product2.html" class="button">Детальніше</a>
+        </article>
+
+        <article class="product-card" data-product-id="3">
+            <div class="product-icon">
+                <img src="photo3.jpg" alt="Клавіатура"></div>
+            
+            <h2 class=product-name>Клавіатура</h2>
+            <p class="price">1499 грн</p>
+            <a href="product3.html" class="button">Детальніше</a>
+        </article>
+
+    </section>
+
+</main>
+
+<script src="script.js" defer></script>
+</body>
+</html>
