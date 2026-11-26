@@ -6,7 +6,7 @@ const jwt = require('jsonwebtoken');
 const { initDatabase, db } = require('./src/database');
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 const JWT_SECRET = process.env.JWT_SECRET || 'dev-only-change-this-secret-before-deployment';
 initDatabase();
 app.use(helmet({ contentSecurityPolicy: false }));
