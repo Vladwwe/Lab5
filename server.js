@@ -11,7 +11,9 @@ const JWT_SECRET = process.env.JWT_SECRET || 'dev-only-change-this-secret-before
 initDatabase();
 app.use(helmet({ contentSecurityPolicy: false }));
 app.use(express.json({ limit: '20kb' }));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public'), {
+  index: 'main.html'
+}));
 function validId(id) { return Number.isInteger(Number(id)) && Number(id) > 0; }
 function authRequired(req, res, next) {
   const header = req.headers.authorization || '';
